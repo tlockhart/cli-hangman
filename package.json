@@ -1,0 +1,22 @@
+{
+  "name": "cli-hangman",
+  "version": "1.0.0",
+  "description": "A simple hangman game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlockhart/cli-hangman.git"
+  },
+  "author": "Tony Lockhart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlockhart/cli-hangman/issues"
+  },
+  "homepage": "https://github.com/tlockhart/cli-hangman#readme",
+  "dependencies": {
+    "inquirer": "^6.2.0"
+  }
+}
