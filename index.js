@@ -11,14 +11,16 @@ const game = {
     currentGuesses: '',
     playerIncorrectGuesses: [],
     playerCorrectGuesses: [],
-    startGame: function(wrd) {
+    startGame: function() {
         this.currentGuesses = new Word((this.answers[Math.floor(Math.random() * this.answers.length)]).toLowerCase());
         console.log('\nHangman: Halloween Edition');
         console.log('\nGuess the horror movie villain!');
         console.log('\n' + this.currentGuesses.correctGuessStatus() + '\n');
+        promptUser();
     },
 };//game object literal
 
+//PROMPT USER FOR INPUT
 function promptUser(){
     var syntax = /^[A-Za-z]+$/;
     inquirer.prompt([
@@ -52,7 +54,7 @@ function processInput(letterInput, callback){
       //If guess is correct check if player has won.  If player has not won prompt him for more input
         if(game.currentGuesses.isGuessCorrect(letterInput)){
             var indexOfCorrectGuess = game.playerCorrectGuesses.indexOf(letterInput.toLowerCase());
-            //If correct letter has already been entered ,don't say correct
+            //If correct letter has already been entered, tell the player
             if (indexOfCorrectGuess > -1) {
                 console.log("Already Entered\n");
             }
@@ -111,4 +113,3 @@ function hasPlayerLost(){
 
 //Run Programe 
 game.startGame();//function  
-promptUser();

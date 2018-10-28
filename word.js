@@ -1,7 +1,7 @@
 //require the letter module
 const AnswerLetter = require("./letter");
 
-//word Constructor Function
+//Word Constructor Function
 //1)Contains a this.answerLetters array;
 //2)Recieves the currentAnswer as a string from the answers array and stores each letter as a new instance of AnswerLetter(using charAt)
 //3)Contains this.answerLetters array, where each answerletter is pushed into.
@@ -37,7 +37,7 @@ var Word = function(currentAnswer) {
 /*2) Use AnswerLetter function returnDashOrLetter to store the answerLetter, or a dash, after the
  AnswerLetter function this.isGuessCorrect has been evaluated.  */
 //3)currentCorrectGuesses stores the concatenated letter string.
-//4)Return the string currentuessStatus to be printed to screen
+//4)Return the string currentGuessStatus to be printed to screen
     this.correctGuessStatus = function() {
         var currentGuessStatus = '';
         for (i in this.answerLetters) {

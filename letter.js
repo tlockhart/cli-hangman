@@ -15,7 +15,7 @@ var AnswerLetter = function(answerLetter) {
     and return true (indicating a correct guess was made), else return 
     false (indicating an incorrect choice was made)*/
     /*NOTE: You can not return isLetterGuessed because it will be set to true when one letter is found
-    This will give a false positive when checking tf a different key matches a letter in the answer);*/
+    This will give a false positive when checking if a different key matches a letter in the answer);*/
     this.isGuessFound = function(letterGuessed) {
         //console.log("Letter ABOVE IF: "+letterGuessed +" = "+this.answerLetter);
         if (this.answerLetter === letterGuessed) {
