@@ -14,7 +14,7 @@ index.js is the main entry point for the app.  In order to run the app, you will
 # Installation Steps
 1. Clone the cli-hangman repo
 2. Install all required technologies
-3. In bash, change the current directory to the cli-hangman and install all modules from the package.json, using the following command:
+3. In bash, change the current directory to the cli-hangman directory and install all modules from the package.json, using the following command:
     1. install i [Enter]  
 # Execute Program
 1. Open bash, and execute the following commands in the cli-hangman directory:
