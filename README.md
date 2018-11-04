@@ -11,6 +11,8 @@ index.js is the main entry point for the app.  In order to run the app, you will
 1. [Node.js](https://nodejs.org/en/)<br/>
 2. [NPM](https://www.npmjs.com/get-npm)<br/>
 3. [Git & Git Bash](https://git-scm.com/downloads)<br/>
+# NPM Modules Used
+1. Inquirer
 # Installation Steps
 1. Clone the cli-hangman repo
 2. Install all required technologies
