@@ -4,6 +4,8 @@
   "description": "A simple hangman game.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./",
     "test": "node index.js"
   },
   "repository": {
@@ -18,5 +20,10 @@
   "homepage": "https://github.com/tlockhart/cli-hangman#readme",
   "dependencies": {
     "inquirer": "^6.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
   }
 }
